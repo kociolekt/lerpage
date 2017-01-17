@@ -1,0 +1,30 @@
+{
+  "name": "lerpage",
+  "version": "1.0.0",
+  "description": "Fast and plain simple lerp function generating array of values using number of steps between a and b value.",
+  "main": "es5/index.js",
+  "scripts": {
+    "test": "node ./node_modules/browserify/bin/cmd test.js -o es5/test.js -t [ babelify --presets [ env ] ] -u es5",
+    "build": "node ./node_modules/babel-cli/bin/babel index.js -d es5/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kociolekt/lerpage.git"
+  },
+  "keywords": [
+    "lerpage",
+    "lerp"
+  ],
+  "author": "kociolekt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kociolekt/lerpage/issues"
+  },
+  "homepage": "https://github.com/kociolekt/lerpage#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.8",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0"
+  }
+}
